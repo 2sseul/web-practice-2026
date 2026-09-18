@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>week3 실습</title>
+    <meta name="description" content="기초웹개발론 3주차 HTML 실습 페이지입니다." />
+    <meta property="og:title" content="week3 실습" />
+    <meta property="og:description" content="기초웹개발론 3주차 HTML 실습 페이지입니다." />
+    <meta property="og:url" content="https://example.com/week3/" />
+</head>
+<body>
+    <header>
+        <img src="https://shared-comic.pstatic.net/thumb/webtoon/796152/thumbnail/thumbnail_IMAG19_80e8b206-87f3-4c7f-8913-daf4cf6bcdea.jpg" alt="로고: 강아지 마루 캐릭터" width="50" />
+        <h1>이슬</h1>
+    </header>
+
+    <main>
+        <h1>a 태그</h1>
+        <a href="https://www.jejunu.ac.kr/"
+        target="_blank">제주대학교</a>
+        <a href="tel:010-0000-0000">전화걸기</a>
+        <a href="mailto:iseul0626@gmail.com">이메일보내기</a>
+        <a href="#audio">오디오 태그로 이동</a>
+
+        <h1>이미지 태그</h1>
+        <img src="https://shared-comic.pstatic.net/thumb/webtoon/796152/thumbnail/thumbnail_IMAG19_80e8b206-87f3-4c7f-8913-daf4cf6bcdea.jpg" alt="프로필 사진: 웃고 있는 강아지 마루"/>
+
+        <h1>폼 태그</h1>
+        <form>
+            <fieldset>
+                <legend>회원가입</legend>
+                <label for="id">아이디</label>
+                <input type="text" id="id" />
+
+                <label for="password">비밀번호</label>
+                <input type="password" id="password" />
+
+                <label for="email">이메일</label>
+                <input type="email" id="email" />
+
+                <label for="tel">전화번호</label>
+                <input type="tel" id="tel" />
+
+
+                <h2>체크박스 (좋아하는 숫자를 선택하세요)</h2>
+                <label for="num1">1</label>
+                <input type="checkbox" id="num1" value="1">
+                <label for="num2">2</label>
+                <input type="checkbox" id="num2" value="2">
+                <label for="num3">3</label>
+                <input type="checkbox" id="num3" value="3">
+
+                <h2>라디오 (좋아하는 과일을 1가지만 선택하세요)</h2>
+                <label for="apple">사과</label>
+                <input type="radio" name="fruit" id="apple">
+                <label for="banana">바나나</label>
+                <input type="radio" name="fruit" id="banana">
+                <label for="peach">복숭아</label>
+                <input type="radio" name="fruit" id="peach">
+
+                <h2>파일</h2>
+                <label for="file">파일 첨부</label>
+                <input type="file" id="file" />
+
+                <h2>기타 폼요소</h2>
+                <label for="content">문의내용</label>
+                <textarea id="content"></textarea>
+
+                <label for="category">문의유형</label>
+                <select id="category">
+                    <option value="a">배송</option>
+                    <option value="b" selected>주문</option>
+                    <option value="c">기타</option>
+                </select>
+            </fieldset>
+        </form>
+
+        <h1>문의하기</h1>
+        <form>
+            <fieldset>
+                <legend>문의하기</legend>
+                <label for="contact-name">이름</label>
+                <input type="text" id="contact-name" name="name" />
+
+                <label for="contact-email">이메일</label>
+                <input type="email" id="contact-email" name="email" />
+
+                <label for="contact-type">문의유형</label>
+                <select id="contact-type" name="type">
+                    <option value="general">일반 문의</option>
+                    <option value="bug">오류 신고</option>
+                    <option value="etc">기타</option>
+                </select>
+
+                <label for="contact-message">문의 내용</label>
+                <textarea id="contact-message" name="message"></textarea>
+
+                <button type="submit">보내기</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 이슬</p>
+        <p>이메일: <a href="mailto:iseul0626@gmail.com">iseul0626@gmail.com</a></p>
+    </footer>
+</body>
+</html>
