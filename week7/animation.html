@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ani{
+            width:200px;
+            height:200px;
+            background-color:yellow;
+            animation: 2s infinite alternate move;
+        }
+        .ani:hover{
+            animation-play-state: paused;
+        }
+        @keyframes move{
+            0%{
+                transform:translateX(0px);
+            }
+            100%{
+                transform:translateX(100px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Animation</h1>
+    <div class="ani"></div>
+</body>
+</html>
